@@ -1,0 +1,140 @@
+*
+{
+	padding: 0;
+	margin:  0;
+	box-sizing: border-box;
+}
+body
+{
+	background-image: url(background.jpeg);
+	background-size: 100% 70%;
+
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+
+.menu-bar
+{
+	background: rgb(0,100,0);
+	text-align: center;
+}
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+
+.menu-bar ul li
+{
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
+}
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.active, .menu-bar ul li:hover
+{
+	background: #2bab0d;
+	border-radius: 3px;
+}
+.menu-bar .fa
+{
+	margin-right: 8px;
+}
+
+.submenu
+{
+	display: none;
+}
+.menu-bar ul li:hover .submenu
+{
+	display: block;
+	position: absolute;
+	background: rgb(0,100,0);
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+.menu-bar ul li:hover .submenu ul
+{
+	display: block;
+	margin: 10px;
+}
+.menu-bar ul li:hover .submenu ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.menu-bar ul li:hover .submenu ul li:last-child
+{
+	border-bottom: none;
+}
+.menu-bar ul li:hover .submenu ul li a:hover
+{
+	color: #b2ff00;
+}
+
+
+h1{
+	text-decoration: underline;
+	padding-bottom: 20px;
+}
+
+p{
+	font-size: 1.2em;
+}
+
+.bts
+{
+	margin-top: 100px;
+
+}
+
+.p1{
+   padding-bottom: 100px;
+}
+
+.patterns {
+  height: 100vh;
+}
+
+
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: green;
+  font-size: 150px;
+  font-weight: 700;
+  stroke-width: 6;
+ 
+  animation: textAnimate 10s infinite alternate;
+  
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:hsl(189, 68%, 75%)
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%,0%)
+  }
+  
+}
